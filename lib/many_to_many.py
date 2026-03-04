@@ -31,13 +31,13 @@ class Contract:
 
     def __init__(self, author, book, date, royalties):
         if not isinstance(author, Author):
-            raise Exception("author must be an Author instance")
+            raise Exception("author must be of type Author")
         if not isinstance(book, Book):
-            raise Exception("book must be a Book instance")
+            raise Exception("book must be of type Book")
         if not isinstance(date, str):
-            raise Exception("date must be a string")
+            raise Exception("date must be of type str")
         if not isinstance(royalties, int):
-            raise Exception("royalties must be an int")
+            raise Exception("royalties must be of type int")
 
         self.author = author
         self.book = book
